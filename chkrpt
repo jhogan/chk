@@ -1,0 +1,1 @@
+sed 's/\",\"/" || "/g; s/\"//g'  db/db | grep ^$1 | awk -f chkrpt.awk
